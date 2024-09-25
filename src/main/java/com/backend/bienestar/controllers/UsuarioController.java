@@ -1,5 +1,6 @@
 package com.backend.bienestar.controllers;
 
+import com.backend.bienestar.models.Actividad;
 import com.backend.bienestar.models.Usuario;
 import com.backend.bienestar.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,5 +28,9 @@ public class UsuarioController {
     @DeleteMapping("/{id}")
     public void eliminarUsuario(@PathVariable String id) {
         usuarioService.eliminarUsuario(id);
+    }
+    @GetMapping("/{id}/recomendaciones")
+    public List<Actividad> obtenerRecomendaciones(@PathVariable String id) {
+        return usuarioService.generarRecomendaciones(id);
     }
 }
