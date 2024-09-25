@@ -1,14 +1,11 @@
 package com.backend.bienestar.models;
 
-import java.time.LocalDateTime;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import lombok.Data;
+import java.time.LocalDateTime;
 
-@Data
-@Document (collection = "reservas")
+@Document(collection = "reservas")
 public class Reserva {
     @Id
     private String id;
@@ -16,4 +13,45 @@ public class Reserva {
     private String actividadId;
     private LocalDateTime fechaHora;
     private String estado;
+
+    // Getters y Setters
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getMiembroId() {
+        return miembroId;
+    }
+
+    public void setMiembroId(String miembroId) {
+        this.miembroId = miembroId;
+    }
+
+    public String getActividadId() {
+        return actividadId;
+    }
+
+    public void setActividadId(String actividadId) {
+        this.actividadId = actividadId;
+    }
+
+    public LocalDateTime getFechaHora() {
+        return fechaHora;
+    }
+
+    public void setFechaHora(LocalDateTime fechaHora) {
+        this.fechaHora = fechaHora;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
 }
