@@ -125,10 +125,3 @@ El sistema genera recomendaciones de actividades para los usuarios basadas en su
 #### Endpoint:
 - `GET /api/usuarios/{id}/recomendaciones`: Genera una lista de actividades recomendadas para el usuario con el ID proporcionado.
 
-### Cómo probar el sistema
-
-1. Clonar el repositorio e instalar las dependencias:
-   ```bash
-   git clone <repositorio-url>
-   cd bienestar-backend
-   mvn clean install
