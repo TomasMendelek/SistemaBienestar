@@ -8,10 +8,10 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")  // Permitir CORS para todas las rutas
-                .allowedOrigins("http://localhost:3000")  // Permitir solicitudes desde tu frontend
-                .allowedMethods("GET", "POST", "PUT", "DELETE")  // Métodos permitidos
-                .allowedHeaders("*")  // Permitir todos los encabezados
-                .allowCredentials(true);  // Permitir credenciales (si es necesario)
+        registry.addMapping("/**") 
+                .allowedOrigins("https://sistema-bienestar-front-end.vercel.app")
+                .allowedMethods("GET", "POST", "PUT", "DELETE")
+                .allowedHeaders("*") 
+                .allowCredentials(true);
     }
 }
