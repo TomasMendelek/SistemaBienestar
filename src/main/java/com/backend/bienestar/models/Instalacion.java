@@ -6,15 +6,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.Data;
 
 @Data
-@Document(collection = "usuarios")
-public class Usuario {
+@Document (collection = "instalaciones")
+public class Instalacion {
     @Id
     private String id;
     private String nombre;
-    private String apellido;
-    private String email;
-    private String tipo;
-    private String objetivos;
-    private String progreso;
-
+    private int capacidad;
+    private String equiposDisponibles;
+    
 }
