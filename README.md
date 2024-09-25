@@ -9,14 +9,29 @@ Este proyecto es una plataforma digital para un centro de bienestar integral que
 - Implementar APIs RESTful conectadas a una base de datos **MongoDB**.
 - Crear un sistema completo que permita la gestión de usuarios, actividades, reservas, instalaciones, suscripciones y recomendaciones personalizadas.
 
-## Tecnologías utilizadas
 
+##Link BackEnd (Produccion): https://bienestar-production.up.railway.app
+
+##Link FrontEnd (Produccion): https://sistema-bienestar-front-end.vercel.app
+
+
+## Tecnologías utilizadas Back End
 - **Java 17**
 - **Spring Boot**
 - **MongoDB** (para almacenamiento de datos)
 - **Maven** (gestor de dependencias)
 - **Postman** (para pruebas de la API)
 - **Lombok** (para simplificar código)
+- **Railway** (Deploy)
+
+## Tecnologías utilizadas Front End
+- **Next.js 14**
+- **React 18**
+- **Typescript** (para manejo de Datos)
+- **React-rooter** (gestionar rutas)
+- **Tailwind** (Libreria De estilos)
+- **Fremer Motion** (Libreria de animaciones y transiciones)
+- - **Vercel** (Deploy)
 
 ## Estructura del proyecto
 
@@ -71,6 +86,8 @@ Representa las suscripciones de los miembros a los servicios:
 - `fechaInicio`: Fecha de inicio de la suscripción.
 - `fechaFin`: Fecha de finalización.
 - `estado`: Estado de la suscripción (Activa, Inactiva).
+
+![image](https://github.com/user-attachments/assets/1988950a-bab9-4dc1-adba-225162b9473a)
 
 ## Funcionalidades principales
 
