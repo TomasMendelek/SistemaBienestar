@@ -4,18 +4,15 @@ FROM alpine:3.18 AS build
 # Instalar dependencias necesarias para descargar y usar JDK y Maven
 RUN apk add --no-cache curl bash tar gzip
 
-# Descargar JDK 23 de OpenJDK
+# Descargar JDK 23 de OpenJDK Early Access
 RUN curl -o /tmp/openjdk-23.tar.gz https://download.java.net/java/early_access/jdk23/28/GPL/openjdk-23-ea+28_linux-x64_bin.tar.gz
 
-# Extraer el archivo
-RUN tar -xzf /tmp/openjdk-23.tar.gz -C /opt/
+# Extraer el archivo JDK en /opt
+RUN mkdir /opt/jdk-23 && tar -xzf /tmp/openjdk-23.tar.gz -C /opt/jdk-23 --strip-components=1
 
 # Establecer las variables de entorno para usar JDK 23
 ENV JAVA_HOME=/opt/jdk-23
 ENV PATH="$JAVA_HOME/bin:$PATH"
-
-# Verifica que JDK 23 esté correctamente instalado
-RUN java -version
 
 # Paso 2: Instalar Maven manualmente
 RUN apk add --no-cache maven
