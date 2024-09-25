@@ -10,9 +10,9 @@ Este proyecto es una plataforma digital para un centro de bienestar integral que
 - Crear un sistema completo que permita la gestión de usuarios, actividades, reservas, instalaciones, suscripciones y recomendaciones personalizadas.
 
 
-## Link BackEnd (api) (Produccion): https://bienestar-production.up.railway.app/
+### Link BackEnd (api) (Produccion): https://bienestar-production.up.railway.app/
 
-## Link FrontEnd (Produccion): https://sistema-bienestar-front-end.vercel.app
+### Link FrontEnd (Produccion): https://sistema-bienestar-front-end.vercel.app
 
 
 ## Tecnologías utilizadas Back End
