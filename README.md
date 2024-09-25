@@ -89,6 +89,34 @@ Representa las suscripciones de los miembros a los servicios:
 
 ![image](https://github.com/user-attachments/assets/1988950a-bab9-4dc1-adba-225162b9473a)
 
+## Cardinalidades
+
+### Usuario - Reserva
+
+- **Descripción**: Un usuario puede hacer muchas reservas. Una reserva pertenece a un usuario.
+- **Cardinalidad**: 1:N (Uno a muchos).
+
+### Actividad - Reserva
+
+- **Descripción**: Una actividad puede tener muchas reservas. Una reserva pertenece a una actividad.
+- **Cardinalidad**: 1:N (Uno a muchos).
+
+### Actividad - Instalación
+
+- **Descripción**: Una instalación puede tener muchas actividades. Una actividad se realiza en una instalación.
+- **Cardinalidad**: 1:N (Uno a muchos).
+
+### Usuario (Instructor) - Actividad
+
+- **Descripción**: Un instructor (que es también un Usuario) puede dirigir muchas actividades. Una actividad tiene un instructor.
+- **Cardinalidad**: 1:N (Uno a muchos).
+
+### Usuario - Suscripción
+
+- **Descripción**: Un usuario puede tener una suscripción activa. Una suscripción pertenece a un usuario.
+- **Cardinalidad**: 1:1 (Uno a uno).
+
+
 ## Funcionalidades principales
 
 ### 1. Gestión de Usuarios
