@@ -12,6 +12,6 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedOrigins("https://sistema-bienestar-front-end.vercel.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*") 
-                .allowCredentials(true);
+                .allowCredentials(false);
     }
 }
