@@ -1,3 +1,5 @@
+package com.backend.bienestar.controllers;
+
 import com.backend.bienestar.models.Actividad;
 import com.backend.bienestar.services.ActividadService;
 import org.springframework.beans.factory.annotation.Autowired;

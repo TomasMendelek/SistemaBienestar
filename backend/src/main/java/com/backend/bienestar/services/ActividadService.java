@@ -1,3 +1,5 @@
+package com.backend.bienestar.services;
+
 import com.backend.bienestar.models.Actividad;
 import com.backend.bienestar.repositories.ActividadRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +11,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class ActividadService {
-
     @Autowired
     private ActividadRepository actividadRepository;
 
