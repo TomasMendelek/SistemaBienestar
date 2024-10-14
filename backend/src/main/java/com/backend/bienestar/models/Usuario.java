@@ -11,6 +11,7 @@ public class Usuario {
     private String apellido;
     private String email;
     private String tipo;
+    private String especialidad;
     private String objetivos;
     private String progreso;
 
@@ -53,6 +54,14 @@ public class Usuario {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public String getEspecialidad() {
+        return especialidad;
+    }
+
+    public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
     }
 
     public String getObjetivos() {
