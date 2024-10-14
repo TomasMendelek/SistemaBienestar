@@ -1,5 +1,3 @@
-package com.backend.bienestar.controllers;
-
 import com.backend.bienestar.models.Actividad;
 import com.backend.bienestar.services.ActividadService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +21,11 @@ public class ActividadController {
     @GetMapping("/{id}")
     public Optional<Actividad> obtenerActividadPorId(@PathVariable String id) {
         return actividadService.obtenerActividadPorId(id);
+    }
+
+    @GetMapping("/instructor/{instructorId}")
+    public List<Actividad> obtenerActividadesPorInstructor(@PathVariable String instructorId) {
+        return actividadService.obtenerActividadesPorInstructor(instructorId);
     }
 
     @PostMapping
