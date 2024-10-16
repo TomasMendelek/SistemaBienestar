@@ -5,7 +5,7 @@ const API_URL = 'https://bienestar-production.up.railway.app/api';
 // Obtener todas las actividades
 export const getActivities = async () => {
   const response = await axios.get(`${API_URL}/actividades`);
-  return response.data;
+  return response.data;   
 };
 
 // Obtener detalles de una actividad
